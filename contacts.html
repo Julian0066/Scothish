@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacto</title>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/script.js"></script> 
+<script src="js/superfish.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/tmStickUp.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+<script>
+ $(window).load(function(){
+  $().UItoTop({ easingType: 'easeOutQuart' });
+  $('#stuck_container').tmStickUp({});  
+ }); 
+</script>
+</head>
+<body>
+<!--==============================
+              header
+=================================-->
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12 rel">
+        <h1>
+          <a href="index.html">
+            <img src="images/logo.png" alt="Logo alt">
+          </a>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <section id="stuck_container">
+  <!--==============================
+              Stuck menu
+  =================================-->
+    <div class="container">
+      <div class="row">
+        <div class="grid_12 ">
+          <div class="navigation ">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="about.html">Productos</a></li>
+               <li><a href="services.html">Servicios</a></li>
+               <li><a href="blog.html">Preguntas Frecuentes</a></li>
+               <li class="current"><a href="contacts.html">Contacto</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>       
+         <div class="clear"></div>  
+        </div>
+     </div> 
+    </div> 
+  </section>
+</header>
+<!--=====================
+          Content
+======================-->
+<section id="content"><div class="ic">Scothiss Terrier</div>
+  <div class="container">
+    <div class="row">
+      <div class="grid_12">
+        <h3>Contacto</h3>
+        <div class="map">
+          <figure class="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.1371230330965!2d-74.14583893573699!3d4.569369694055854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6142d00aa3475368!2sVeterinaria%20Scotty!5e0!3m2!1ses!2sco!4v1601173484070!5m2!1ses!2sco" style="border:0"></iframe>
+          </figure>
+        </div>
+      </div>
+      <div class="grid_5">
+        <h3 class="head__1">Información</h3>
+        <address class="text3">
+         Correo: husaqueng@gmail.com <br>Teléfono:3133164226
+ <br>Dirección:
+Cra 22G No 60 - 48 sur Local 19 Casa linda del tunal
+        </address>
+      </div>
+      <div class="grid_4">
+        <h3 class="head__1"></h3>
+        <div class="text3">
+          Instagram: <br>Facebook:
+        </div>
+      </div>
+      <div class="grid_3">
+        <h3 class="head__1"></h3>
+        <div class="text3">
+          <a href="#">husaqueng@hotmail.com</a><br><a href="#"></a>
+        </div>
+      </div>
+      <div class="grid_12">
+        <h3 class="head__1">Enviar mensaje:</h3>
+        <div class="fwn">
+          <p>En este espacio podras comunicarnos tus dudas e inquietudes <a  rel="nofollow" class="color1"></a>.</p>
+          <p>Asegurate de rellenar todos los campos para que tu mensaje pueda ser enviado <a  rel="nofollow" class="color1"></a> </p>
+Tus mensajes nos ayudaran a mejorar
+        </div>
+              <form id="contact-form">
+                  <div class="contact-form-loader"></div>
+                  <fieldset>
+                    <label class="name">
+                      <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*Este nombre no es valido.</span>
+                    </label>
+                   
+                    <label class="email">
+                      <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+                      <span class="empty-message">*Esta información es requerida.</span>
+                      <span class="error-message">*Este correo no es valido.</span>
+                    </label>
+                    <label class="phone">
+                      <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
+                      <span class="empty-message">*Esta información es requerida.</span>
+                      <span class="error-message">*Este telefono no es valido.</span>
+                    </label>
+                   
+                    <label class="message">
+                      <textarea name="message" placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                      <span class="empty-message">*Esta información es requerida.</span>
+                      <span class="error-message">*El mensaje es muy corto.</span>
+                    </label>
+                    <div class="clear"></div>
+                    <div>
+                      <a href="#" class="btn" data-type="submit">Enviar mensaje</a>
+                    </div>
+                  </fieldset> 
+                  <div class="modal fade response-message">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                          Tu mensaje ha sido enviado
+                        </div>      
+                      </div>
+                    </div>
+                  </div>
+                </form>   
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <div class="copyright"><span class="brand">Scothish Terrier</span> &copy; <span id="copyright-year"></span> | <a href="#">Privacy Policy</a>
+          <div class="sub-copy">Pagina diseñada por <a href=" rel="nofollow">Julián Steven Rojas Aya</a></div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+</body>
+</html>
